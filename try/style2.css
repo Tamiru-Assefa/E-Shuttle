@@ -1,0 +1,108 @@
+:root{
+    --bg:#ffffff;
+    --accent:#0b6ef6;
+    --muted:#6b7280;
+    --nav-height:64px;
+    --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background:var(--bg);
+    color:#111827;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* --- Hero Section Styling --- */
+
+.hero {
+    /* Full height of the viewport */
+    height: 100vh; 
+    /* Centers content vertically and horizontally */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /* Use a high-quality, relevant image */
+    background: url('shuttle-bg.jpg') no-repeat center center/cover;
+    /* Position for the overlay */
+    position: relative;
+    /* Text color for the entire section, usually white for dark backgrounds */
+    color: #ffffff; 
+    text-align: center;
+}
+
+/* --- The Overlay (Crucial for text readability) --- */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradient from dark blue/black to a lighter shade, mimicking water/dusk */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 40, 80, 0.7)); 
+    z-index: 1; /* Keep it below the text */
+}
+
+/* --- Content Styling --- */
+
+.hero-content {
+    /* Ensure content is above the overlay */
+    z-index: 2; 
+    /* Add padding for better spacing */
+    padding: 20px;
+    max-width: 800px; /* Limits the line length for readability */
+}
+
+.hero-content h1 {
+    /* Large, attention-grabbing font for the company name */
+    font-size: 4.5rem; 
+    margin-bottom: 0.25rem;
+    /* Subtle text shadow for pop against the background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    font-weight: 700;
+}
+
+.tagline {
+    /* Slightly smaller, stylish font for the main message */
+    font-size: 1.8rem; 
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    /* Color that pops—like the sunset in your logo */
+    color: #FFC06C; 
+    font-weight: 300;
+}
+
+.lead {
+    /* Comfortable reading size for the detailed description */
+    font-size: 1.15rem; 
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+/* --- Call-to-Action (CTA) Button Styling --- */
+
+.btn-primary {
+    /* Primary color from your logo: a vibrant blue or a deep ocean color */
+    background-color: #0077B6; 
+    color: #ffffff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    /* A stronger shadow to make the button feel clickable */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    /* Slightly darker blue on hover for feedback */
+    background-color: #005A8D; 
+    /* Slight lift on hover */
+    transform: translateY(-2px); 
+}
