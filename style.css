@@ -135,7 +135,7 @@ p.lead{ margin:0; color:var(--muted); }
   position: relative;
   width: 100%;
   /* min-height: 100vh; */
-  background: url('shuttle-bg.jpg') center/cover no-repeat;
+  background: url('image/shuttle-bg.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,6 +238,25 @@ p.lead{ margin:0; color:var(--muted); }
   .hero-logo {
     width: 90px;
   }
+}
+
+.navbook{
+    border: solid;
+    border-color: #f36303;
+}
+.footbook{
+   
+    background-color: rgb(241, 105, 7);
+    padding: 15px;
+    border-radius: 5px;
+    
+    
+}
+.footbook :hover{
+    color: #d0d9ff;
+}
+#footcolor{
+    color: #111827;
 }
 
 /* Start of cards section */
@@ -437,3 +456,446 @@ p.lead{ margin:0; color:var(--muted); }
     transform: scale(1.2);
 }
 
+/* ---------- FOOTER ---------- */
+#footer {
+    background-color: #1E3A8A;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footer-about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d0d9ff;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #d0d9ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #FFD700;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-social .social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #162963;
+    font-size: 0.9rem;
+    color: #b0c4ff;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links ul li,
+    .footer-about,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
+
+/* -----------------------------------
+   HERO SECTION (Policies Page)
+----------------------------------- */
+.heros {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #0b6ef6, #0454c8);
+    color: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.heros h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.heros .lead {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: auto;
+    color: white
+}
+
+/* -----------------------------------
+   POLICIES GRID
+----------------------------------- */
+.policies {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
+/* -----------------------------------
+   INDIVIDUAL POLICY BOXES
+----------------------------------- */
+.policy-category {
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 20px;
+    border-left: 6px solid #0b6ef6;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.25s ease-in-out;
+}
+
+.policy-category:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.policy-category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0b6ef6;
+    font-weight: 700;
+}
+
+/* -----------------------------------
+   LIST INSIDE EACH POLICY BOX
+----------------------------------- */
+.policy-category ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.policy-category ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* -----------------------------------
+   RESPONSIVE
+----------------------------------- */
+@media (max-width: 600px) {
+    .heros h1 {
+        font-size: 2.2rem;
+    }
+
+    .policies {
+        grid-template-columns: 1fr;
+    }
+
+    .policy-category {
+        padding: 25px 20px;
+    }
+}
+
+/* ---------------------------
+   ABOUT PAGE - HERO SECTION
+---------------------------- */
+.about-hero {
+    background: linear-gradient(135deg, #0b6ef6, #0454c8);
+    color: #fff;
+    text-align: center;
+    padding: 90px 20px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.about-tagline {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.15rem;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* ---------------------------
+   MAIN CONTENT GRID
+---------------------------- */
+.about-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
+/* ---------------------------
+   ABOUT INFO BOXES
+---------------------------- */
+.about-box {
+    background: #ffffff;
+    padding: 28px 30px;
+    border-radius: 18px;
+    border-left: 6px solid #0b6ef6;
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 7px 28px rgba(0, 0, 0, 0.10);
+}
+
+.about-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #0b6ef6;
+    font-weight: 700;
+}
+
+/* LISTS */
+.about-box ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.about-box ul li {
+    margin-bottom: 10px;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ---------------------------
+   RESPONSIVE DESIGN
+---------------------------- */
+@media (max-width: 600px) {
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-box {
+        padding: 24px 22px;
+    }
+}
+
+
+
+
+
+/* ------------------------------------------
+   BOOKING HERO
+------------------------------------------- */
+.booking-hero {
+    background: linear-gradient(135deg, #0b6ef6, #0454c8);
+    color: #fff;
+    text-align: center;
+    padding: 90px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.booking-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.booking-lead {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ------------------------------------------
+   BOOKING FORM WRAPPER
+------------------------------------------- */
+.booking-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.booking-container {
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.booking-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #0b6ef6;
+    font-weight: 700;
+}
+
+/* ------------------------------------------
+   FORM ELEMENTS
+------------------------------------------- */
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1f2937;
+}
+
+.form-group label span {
+    color: red;
+}
+
+/* INPUTS */
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 12px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: #0b6ef6;
+    box-shadow: 0 0 0 3px rgba(11,110,246,0.16);
+}
+
+/* SECTION TITLES (Pickup Address, etc.) */
+.section-title {
+    grid-column: 1 / -1;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    color: #0b6ef6;
+    font-weight: 700;
+}
+
+/* ------------------------------------------
+   TIME FIELD (HH / MM / AM-PM)
+------------------------------------------- */
+.time-group .time-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-flex input {
+    width: 80px;
+    text-align: center;
+}
+
+.time-flex select {
+    width: 80px;
+}
+
+/* ------------------------------------------
+   SUBMIT BUTTON
+------------------------------------------- */
+.book-btn {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    padding: 16px 0;
+    background: #0b6ef6;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.book-btn:hover {
+    background: #0454c8;
+    transform: translateY(-2px);
+}
+
+/* ------------------------------------------
+   RESPONSIVE DESIGN
+------------------------------------------- */
+@media (max-width: 600px) {
+    .booking-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .booking-container {
+        padding: 30px 20px;
+    }
+
+    .time-flex input,
+    .time-flex select {
+        width: 65px;
+    }
+}

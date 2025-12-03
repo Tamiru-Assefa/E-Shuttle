@@ -12,8 +12,8 @@
     <header id="site-header">
         <div class="container" id="header-inner">
             <a class="brand" href="/"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="Logo.png" alt="Ermi Shuttle logo" />
-                <span>Ermi Shuttle</span>
+                <img src="image/Logo.png" alt="EST Shuttle logo" />
+                <span>EST Shuttle Service Seattle</span>
             </a>
 
             <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
@@ -37,8 +37,8 @@
     <section class="hero" id="home">
     <div class="overlay"></div>
     <div class="hero-content">
-        <img src="Logo.png" alt="Ermi Shuttle Logo" class="hero-logo">
-        <h1>Welcome to Ermi Shuttle</h1>
+        <img src="image/Logo.png" alt="EST Shuttle Logo" class="hero-logo">
+        <h1>Welcome to EST Shuttle </h1>
         <p class="tagline">Fast, Reliable Shuttle Service</p>
         <p class="lead">Simple booking, live tracking, and safe rides — anytime, anywhere.</p>
         <a href="booking.html" class="btn btn-primary">Book Your Ride</a>
@@ -49,12 +49,12 @@
 
     <section id="cards" class="cards-section">
     <h2 class="section-title">Our Services</h2>
-
+        <br><br>
     <div class="cards-container">
 
         <!-- CARD 1 -->
         <div class="card">
-            <img src="icons/cards1.png" alt="Online Booking Icon">
+            <img src="icons/card1.png" alt="Online Booking Icon">
             <h3>Easy Online Booking</h3>
             <p>
                 Book your ride in seconds using our simple and secure reservation system. 
@@ -88,7 +88,7 @@
 <section id="hero-slider">
 
     <div class="slide active">
-        <img src="icons/slide7.jpg" alt="Shuttle Service">
+        <img src="image/slide6.jpg" alt="Shuttle Service">
         <div class="slide-text">
             <h2>Fast & Reliable Shuttle Service</h2>
             <p>Your comfortable ride across Seattle starts here.</p>
@@ -96,7 +96,7 @@
     </div>
 
     <div class="slide">
-        <img src="icons/slide9.jpg" alt="Airport Transfer">
+        <img src="image/slide7.jpg" alt="Airport Transfer">
         <div class="slide-text">
             <h2>Airport Transfers Made Easy</h2>
             <p>On-time pickup and drop-off for every flight.</p>
@@ -104,7 +104,7 @@
     </div>
 
     <div class="slide">
-        <img src="icons/slide6.jpg" alt="City Travel">
+        <img src="image/slide81.png" alt="City Travel">
         <div class="slide-text">
             <h2>City & Hotel Shuttle</h2>
             <p>Safe, clean, and affordable transportation.</p>
@@ -120,7 +120,7 @@
     <div class="t-slider">
         
         <div class="t-slide active">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+            <img src="icons/whatsup.png" alt="Customer">
             <h3>Sarah L.</h3>
             <p class="stars">★★★★★</p>
             <p class="text">“EST Shuttle made my airport transfer super easy. Friendly driver and very clean car!”</p>
@@ -148,63 +148,44 @@
     </div>
 </section>
 
+</main>
 
-
-
-
-        <section id="pricing">
-            <h2>Pricing</h2>
-            <p>...</p>
-        </section>
-    </main>
-
-    <footer id="site-footer">
-        <div class="container">
-            <p>&copy; 2024 Ermi Shuttle. All rights reserved.</p>
+    <!-- FOOTER -->
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>EST Shuttle</h3>
+            <p>Come to Seattle, and we’ll take care of you! From tours to local tips, we ensure you have an unforgettable experience.</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
-    <script>
-    let slides = document.querySelectorAll("#hero-slider .slide");
-    let index = 0;
 
-    function showNextSlide() {
-        slides[index].classList.remove("active");
-        index = (index + 1) % slides.length;
-        slides[index].classList.add("active");
-    }
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#cards">Services</a></li> <br>
+                <li><a href="#" class="footbook" id="footcolor"><strong>Book a Ride</strong> </a></li>
+            </ul>
+        </div>
 
-    setInterval(showNextSlide, 2500); // 4 seconds
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><img src="icons/whatsup.png" alt="whatsup"></a>
+                <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="icons/telegram.png" alt="telegram"></a>
+                <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
 
+    <div class="footer-bottom">
+        <p>&copy; 2025 EST Shuttle. All rights reserved.</p>
+    </div>
+</footer>
 
-
-   let indexb = 0;
-const slides = document.querySelectorAll(".t-slide");
-const dots = document.querySelectorAll(".dot");
-
-function showSlide(i) {
-    slides.forEach(s => s.classList.remove("active"));
-    dots.forEach(d => d.classList.remove("active"));
-
-    slides[i].classList.add("active");
-    dots[i].classList.add("active");
-}
-
-function nextSlide() {
-    indexb = (indexb + 1) % slides.length;
-    showSlide(indexb);
-}
-
-dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-        indexb = i;
-        showSlide(i);
-    });
-});
-
-setInterval(nextSlide, 4000); // Auto-slide every 4 sec
-</script>
-
+    <script src="js/script.js"></script>
     
 </body>
 </html>
